@@ -4,11 +4,21 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.sidebar{
+    left: 0;
+    top: 0;
+    bottom: 0;
+    font-family: Montserrat;
+    position: fixed;
+}
+h1{
+    color: #484A4F;
+}
 .header{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    width: 1,197px;
+    justify-content: space-between;
+    max-width: fit-content;
     height: 94px;
     padding: 15px 30px;
     background-color: #fff;
