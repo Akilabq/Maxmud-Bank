@@ -15,6 +15,7 @@ h1{
     color: #484A4F;
 }
 .header{
+    margin: 15px 60px 15px 250px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,7 +35,7 @@ h1{
     background-color: #ffffff;
     border: 1px solid #ffffff;
     padding: 8px 15px;
-    width: 550px;
+    width: 950px;
     height: 56px;
     border-radius: 50px;
 }
@@ -53,6 +54,115 @@ h1{
     margin-right: 10px;
     font-size: 14px;
 }
-.huynatogle{
+.user-profile{
+    gap: 7px;
+    padding: 6px 16px 6px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+.avatar{
+    height: 56px;
+    width: auto;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+.user-id{
+    font-size: 12px;
+    color: #A0A0A0;
+    margin-top: 2px;
+}
+.user-profile .arrow {
+    color: #888;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.live-toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+    margin: 5px;
+}
+
+
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #e8f5ed;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #cfcfcf; 
+    transition: .4s;
+    border-radius: 50%;
+}
+
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+    background-color: #33d677; 
+}
+
+.live-label {
+    font-size: 16px;
+    color: #888;
+    font-family: Montserrat, sans-serif;
+}
+
+
+
+.lang-select-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.lang-select {
+    appearance: none; 
+    -webkit-appearance: none;
+    border: 1px solid #F0F0F0;
+    border-radius: 50px;
+    padding: 10px 45px 10px 25px; 
+    margin: 10px;
+    font-size: 16px;
+    color: #888;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    min-width: 140px;
+    text-align: center;
+}
+
+.custom-arrow {
+    position: absolute;
+    right: 20px;
+    pointer-events: none; 
+    color: #888;
+    font-size: 14px;
 }
