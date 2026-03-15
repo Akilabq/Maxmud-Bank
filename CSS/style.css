@@ -201,4 +201,21 @@ input:checked + .slider:before {
     color: #888;
     font-size: 14px;
 }
-
+.saymynamenigga{
+    margin-left: 250px; 
+    padding: 120px 55px;
+}
+.hiuser{
+    color: #FFA14E ; 
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.zarabotka {
+    font-size: 24px;
+    color: #1F1F1F;
+    font-weight: 700;
+}
