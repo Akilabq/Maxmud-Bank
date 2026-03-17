@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../JS/main.js"></script>
 </head>
 <body>
     <aside class="sidebar">
@@ -64,20 +66,67 @@
             <img src="images/hitler_360x450.jpg" alt="User" class="avatar">
             <div class="user-info">
             <span class="user-name">Adolf Hamud</span>
-            
+
             <span class="user-id">ID: 14886767</span>
             </div>
             <i class="bi bi-chevron-down arrow"></i>
             </div>
     </header>
     <!-- <p>lorem*34560</p> -->
-     <div class="saymynamenigga">
-        <h2 class="hiuser"><span>👋</span>Hey Adolf!!!</h2>
-        <h1 class="zarabotka">You earned NGN 3,000,000 this month.</h1>    
-     </div>
+<main class="main-content">
+        <div class="welcome-section">
+            <h2 class="hiuser"><span>👋</span>Hey Adolf!!!</h2>
+            <h1 class="zarabotka">You earned NGN 3,000,000 this month.</h1>    
+        </div>
+        
+        <div class="dashboard-charts-container">
+            <div class="chart-card main-chart">
+                <div class="chart-header">
+                    <span class="period-btn">Last 30 days <span class="arrow">▼</span></span>
+                </div>
+                <div class="canvas-wrapper">
+                    <canvas id="mainBarChart"></canvas>
+                </div>
+            </div>
 
+            <div class="bottom-row">
+                <div class="chart-card small-card">
+                    <h3 class="card-title">Success rate</h3>
+                    <div class="donut-wrapper">
+                        <canvas id="successDonutChart"></canvas>
+                        <div class="donut-text">98%</div>
+                    </div>
+                    <div class="donut-legend">
+                        <div class="legend-item">
+                            <span class="dot" style="background: #D9EAD3;"></span>
+                            <div class="legend-data"><strong>1</strong><br><span>Unsuccessful</span></div>
+                        </div>
+                        <div class="legend-item">
+                            <span class="dot" style="background: #93C47D;"></span>
+                            <div class="legend-data"><strong>150</strong><br><span>Successful</span></div>
+                        </div>
+                    </div>
+                </div>
 
-
+                <div class="chart-card small-card">
+                    <h3 class="card-title">Payment issues</h3>
+                    <div class="css-chart">
+                        <div class="css-bar-group"><span class="val">1</span><div class="css-bar" style="height: 10%; background: #F6B26B;"></div><span class="lbl">a</span></div>
+                        <div class="css-bar-group"><span class="val">5</span><div class="css-bar" style="height: 50%; background: #FFE599;"></div><span class="lbl">x</span></div>
+                        <div class="css-bar-group"><span class="val">3</span><div class="css-bar" style="height: 30%; background: #E06666;"></div><span class="lbl">o</span></div>
+                        <div class="css-bar-group"><span class="val">10</span><div class="css-bar" style="height: 100%; background: #76A5AF;"></div><span class="lbl">n</span></div>
+                    </div>
+                    <div class="total-errors">Total number of errors: <span class="highlight">19</span></div>
+                    <ul class="issues-list">
+                        <li><span class="issue-icon" style="background: #F6B26B;">a</span> Customer errors</li>
+                        <li><span class="issue-icon" style="background: #FFE599;">x</span> Fraud blocks</li>
+                        <li><span class="issue-icon" style="background: #E06666; color: white;">o</span> Bank errors</li>
+                        <li><span class="issue-icon" style="background: #76A5AF; color: white;">n</span> System errors</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
 </body>

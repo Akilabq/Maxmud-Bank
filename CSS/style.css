@@ -42,17 +42,17 @@ h1{
     font-size: 28px;
 }
 .header{
+    z-index: 999;
+    width: calc(100% - 240px);
     margin: 0 60px 15px 240px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
     height: 94px;
     padding: 15px 30px;
     background-color: #fff;
     position: fixed;
     gap: 30px;
-    /* box-shadow: 10px 0px 15px 1px #00000066 */
     box-shadow: 10px 2px 10px 2px rgba(0, 0, 0, 0.2);
     
 }
@@ -206,7 +206,7 @@ input:checked + .slider:before {
     padding: 120px 55px;
 }
 .hiuser{
-    color: #FFA14E ; 
+    color: #FFA14E; 
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 8px;
@@ -219,3 +219,152 @@ input:checked + .slider:before {
     color: #1F1F1F;
     font-weight: 700;
 }
+.main-content {
+  margin-left: 240px;
+    padding-top: 110px;  
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    min-height: 100vh;
+    background-color: #fcfcfc;
+}
+.welcome-section {
+    margin-bottom: 40px;
+}
+/* ТОЖЕ САМОЕ НАЧАЛО ЧАРТОВ */
+.dashboard-charts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  .chart-card {
+    background: #ffffff;
+    border: 1px solid #EFEFEF;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.02);
+  }
+  .chart-header {
+    margin-bottom: 20px;
+  }
+  .period-btn {
+    background: #F9F5FF;
+    color: #666;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .canvas-wrapper {
+    position: relative;
+    height: 300px;
+    width: 100%;
+  }
+  .bottom-row {
+    display: flex;
+    gap: 20px;
+  }
+  .small-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .card-title {
+    font-size: 16px;
+    margin: 0 0 20px 0;
+    color: #333;
+  }
+  
+  
+  .donut-wrapper {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 20px auto;
+  }
+  .donut-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: #7BB871;
+  }
+  .donut-legend {
+    display: flex;
+    justify-content: space-around;
+    margin-top: auto;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .legend-item .dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+  }
+  .legend-data strong {
+    font-size: 18px;
+  }
+  .legend-data span {
+    font-size: 12px;
+    color: #888;
+  }
+
+
+  .css-chart {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 20px;
+    height: 120px;
+    margin-bottom: 20px;
+  }
+  .css-bar-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-end;
+  }
+  .css-bar-group .val { font-size: 12px; color: #666; margin-bottom: 5px; }
+  .css-bar-group .lbl { font-size: 12px; color: #aaa; margin-top: 5px; }
+  .css-bar { width: 30px; border-radius: 4px; }
+  
+  .total-errors {
+    font-size: 14px;
+    color: #FF8A00;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .issues-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .issues-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .issue-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-weight: bold;
+    font-size: 10px;
+  }
