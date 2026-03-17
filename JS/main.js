@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", ()=> {
   
   const mainCanvas = document.getElementById('mainBarChart');
   if (mainCanvas) {

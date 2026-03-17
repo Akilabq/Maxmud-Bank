@@ -231,7 +231,7 @@ input:checked + .slider:before {
 .welcome-section {
     margin-bottom: 40px;
 }
-/* ТОЖЕ САМОЕ НАЧАЛО ЧАРТОВ */
+
 .dashboard-charts-container {
     display: flex;
     flex-direction: column;
